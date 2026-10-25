@@ -6,7 +6,7 @@
   "scripts": {
     "heroku-prebuild": "npm install --save-dev",
     "heroku-postbuild": "npm run build",
-    "build": "tsc && npm run copy-files",
+    "build": "npx tsc && npm run copy-files",
     "start": "cross-env NODE_ENV=production node dist/index.js",
     "dev": "cross-env NODE_ENV=development ts-node-dev --respawn --transpile-only src/index.ts",
     "lint": "eslint 'src/**/*.{js,ts}'",
